@@ -1,4 +1,4 @@
-baseURL = 'http://willduke.github.io/'
+baseURL = 'https://willduke.github.io/'
 languageCode = 'en-us'
 title = "Will Duke's Blog"
 theme = "hyde"
