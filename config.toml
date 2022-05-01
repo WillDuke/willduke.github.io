@@ -1,0 +1,14 @@
+baseURL = 'http://willduke.github.io/'
+languageCode = 'en-us'
+title = "Will Duke's Blog"
+theme = "hyde"
+
+[Menus]
+  main = [
+      {Name = "Github", URL = "https://github.com/willduke/"},
+      {Name = "LinkedIn", URL = "https://www.linkedin.com/in/will-duke-86b41786/"}
+  ]
+
+[params]
+description =  "Articles & thoughts on Python, data science, etc."
+enableEmoji = true
