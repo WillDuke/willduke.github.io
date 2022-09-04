@@ -4,8 +4,6 @@ date: 2022-07-28T00:00:00-00:00
 draft: false
 ---
 
-## The Trouble with Notebooks
-
 Notebooks are exceptionally popular among data scientists. So much so that many of my colleagues work largely in JupyterHub or Sagemaker. Notebooks provide a convenient enviroment for quick prototyping, and they feel natural for data scientists that (like me) don't have a formal computer science background. That said, I'm convinced that we are using them in many cases where they aren't worth the downsides, and even that the popular wisdom that they are a good place to get started quickly has it quite backwards.
 
 Well, let me first make sure to give notebooks a fair shake. There are a ton of cool things you can do with notebooks that I think are great:
