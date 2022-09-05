@@ -176,7 +176,7 @@ if __name__ == '__main__':
     main()
 ```
 
-Including the time to load in the data and construct the `igraph.Graph`, this script took 10.2 seconds on my 2019 Macbook Pro.[^2] In total, there were 538 five-word sets using 25 letters (ignoring anagrams). 
+Including the time to load in the data and construct the `igraph.Graph`, this script took 10.2 seconds on my 2019 Macbook Pro. In total, there were 538 five-word sets using 25 letters (ignoring anagrams). 
 
 Here's a sampling of some of the word sets:
 
@@ -188,6 +188,6 @@ Here's a sampling of some of the word sets:
 
 Maybe I shouldn't be surprised that these stretch the definition of English word.
 
-[^1]: The source for the C implementation can be found [here](https://github.com/igraph/igraph/blob/df17b097fd9b582241ee3f38aa82e03eba05d785/src/cliques/cliquer/cliquer.c#L337).
+You can find the complete source for this post [here](https://github.com/WillDuke/blog-post-code/blob/master/blog_post_code/wordle_cliques/cliques.py).
 
-[^2]: You can find all of the code shown here in this GitHub repository.
+[^1]: The source for the C implementation can be found [here](https://github.com/igraph/igraph/blob/df17b097fd9b582241ee3f38aa82e03eba05d785/src/cliques/cliquer/cliquer.c#L337).
