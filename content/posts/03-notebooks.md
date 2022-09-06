@@ -2,6 +2,8 @@
 title: "The Trouble with Notebooks"
 date: 2022-07-28T00:00:00-00:00
 draft: false
+categories: 
+    - python
 tags: 
     - python
     - notebook
