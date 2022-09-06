@@ -81,9 +81,6 @@ appendFilePath = true
 [params.label]
 icon = '/apple-touch-icon.png'
 
-[params.assets]
-disableHLJS = true # fixes variable font size bug on iOS
-
 [fuseOpts]
 isCaseSensitive = false
 shouldSort = true
