@@ -10,9 +10,7 @@ To answer this, Parker used a [relatively naive approach](https://github.com/sta
 
 Essentially, the problem of finding sets of non-overlapping words can be reframed as finding a fully-connected subgraph in a network where all nodes are words and edges connect words which share no letters. By fully-connected, I mean that every node (word) has an edge (i.e. shares no letters) with every other word in that part of the network. In graph theory, these groups are known as *cliques* and there are a number of algorithms for finding them.
 
-
-![An example 5-word clique](/images/clique.png)
-
+{{< figure src="/images/clique.png" alt="An example 5-word clique" >}}
 
 Passen implemented a method that builds cliques by searching neighbors for intersections of progressively more words. I thought we'd give the same approach a try, but see if we can take advantage of Python's fantastic ecosystem -- namely, the `igraph` package -- to further improve the speed. First, we'll need to recreate the set of words from which to search for five-word cliques. I used Parker's source for all English words: the `words_alpha.zip` file which can be found [here](https://github.com/dwyl/english-words/blob/master/words_alpha.zip).
 
