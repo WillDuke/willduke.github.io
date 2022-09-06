@@ -1,14 +1,94 @@
 baseURL = 'https://willduke.github.io/'
-languageCode = 'en-us'
 title = "Will Duke's Blog"
-theme = "hyde"
+languageCode = 'en-us'
+theme = "PaperMod"
+paginate = 5
 
-[Menus]
-  main = [
-      {Name = "Github", URL = "https://github.com/willduke/"},
-      {Name = "LinkedIn", URL = "https://www.linkedin.com/in/will-duke-86b41786/"}
-  ]
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[[menu.main]]
+name = "Posts"
+url = "posts"
+weight = 1
+
+[[menu.main]]
+name = "Archive"
+url = "archives"
+weight = 5
+
+[[menu.main]]
+name = "Tags"
+url = "tags/"
+weight = 10
+
+[[menu.main]]
+name = "Search"
+url = "search/"
+weight = 10
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
 
 [params]
-description =  "Articles & thoughts on Python, data science, etc."
+env = "production"
+author = "Will Duke"
+comments = true
+
+ShowPostNavLinks = true
+ShowReadingTime = true
+ShowShareButtons = true
+enableInlineShortcodes = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowRssButtonInSectionTermList = true
+ShowToc = true
+ShowWordCount = true
 enableEmoji = true
+
+[params.profileMode]
+enabled = true
+title = "Will Duke's Blog"
+subtitle = "Articles & thoughts on Python, data science, etc."
+imageUrl = "/images/blog-logo.png"
+imageTitle = "Snake and binary icons created by Freepik - Flaticon"
+imageWidth = 120
+imageHeight = 120
+
+  [[params.profileMode.buttons]]
+  name = "Blog"
+  url = "/posts"
+
+  [[params.profileMode.buttons]]
+  name = "Archive"
+  url = "/archives"
+
+[[params.socialIcons]]
+name = "GitHub"
+url = "https://github.com/WillDuke"
+
+[[params.socialIcons]]
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/will-duke-86b41786/"
+
+[params.editPost]
+URL = "https://github.com/WillDuke/willduke.github.io/tree/main/content"
+Text = "Suggest Changes"
+appendFilePath = true
+
+[params.label]
+icon = '/apple-touch-icon.png'
+
+[fuseOpts]
+isCaseSensitive = false
+shouldSort = true
+location = 0
+distance = 1_000
+threshold = 0.4
+minMatchCharLength = 0
+keys = [ "title", "permalink", "summary", "content", "tag" ]
+
+[analytics.google]
+SiteVerificationTag = "G-DW1P8KG3ES"
