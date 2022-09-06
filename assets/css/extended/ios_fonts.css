@@ -1,3 +1,7 @@
+/* 
+fixes inconsistent font size on iOS due to issue with flex
+https://github.com/adityatelange/hugo-PaperMod/issues/828#issuecomment-1171994855
+ */
 code {
     text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
