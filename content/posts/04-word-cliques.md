@@ -2,6 +2,13 @@
 title: "Solving Matt Parker's Wordle Puzzle in Seconds with iGraph"
 date: 2022-09-03T13:42:33-04:00
 draft: false
+categories: 
+    - python
+tags: 
+    - python
+    - igraph
+    - wordle
+    - functional
 ---
 
 A few weeks ago, Matt Parker released a [video](https://www.youtube.com/watch?v=_-AfhLQfb6w) where he posed a question he'd received from a viewer about the popular game Wordle: how many words can you try in a Wordle game without reusing a letter? At most, the answer can be 5 (25 letters total with one unused). So the question becomes: are there sets of five English words without any overlapping letters, and (while we're at it) if so, how many?
