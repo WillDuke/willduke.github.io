@@ -27,7 +27,9 @@ def extract_archive_to_word_list(
     archive_path: Path, filename: str
 ) -> Iterable[str]:
     """
-    Provided a path to a zip archive and the name of the file within the archive containing an english word list, extract and read the file and return an iterable of the words.
+    Provided a path to a zip archive and the name of the file within the 
+    archive containing an english word list, extract and read the file
+    and return an iterable of the words.
     """
     return (
         zipfile.ZipFile(archive_path, 'r')
@@ -70,7 +72,9 @@ By filtering our word list with each of these functions, we can keep only words 
 
 ```python
 @Pipe
-def get_unique_set_words_of_length_n(words: Iterable[str], n: int) -> Iterable[str]:
+def get_unique_set_words_of_length_n(
+    words: Iterable[str], n: int
+) -> Iterable[str]:
     """Get the filtered list of words of length n with no repeating digits,
     omitting any words with duplicate letter sets."""
     return (
@@ -119,7 +123,7 @@ To create our list of vertices, we iterate through each of the words and add a t
 
 Passing this edge list to `igraph.Graph` instantiates a graph with a node for each of the words in our word list with edges between words with disjoint sets of letters.
 
-## Finding all the cliques
+## Finding all the Cliques
 
 `igraph.Graph` has a `cliques()` [method](https://igraph.org/python/doc/api/igraph._igraph.GraphBase.html#cliques) which will return cliques between a minimum and maximum size. Under the hood, this method calls the [C method](https://igraph.org/c/doc/igraph-Cliques.html#cliques) `igraph_cliques()`, which makes use of the [Cliquer](https://users.aalto.fi/~pat/cliquer.html) library written largely by Patric Östergård.[^1] For our purposes, finding cliques of a certain size is as simple as specifying the same lower and upper bound:
 
@@ -174,7 +178,7 @@ if __name__ == '__main__':
     main()
 ```
 
-Including the time to load in the data and construct the `igraph.Graph`, this script took 10.2 seconds on my 2019 Macbook Pro. In total, there were 538 five-word sets using 25 letters (ignoring anagrams). 
+Including the time to load in the data and construct the `igraph.Graph`, this script took 10.2 seconds on my 2019 Macbook Pro. In total, there were 538 five-word sets using 25 letters (ignoring anagrams).
 
 Here's a sampling of some of the word sets:
 

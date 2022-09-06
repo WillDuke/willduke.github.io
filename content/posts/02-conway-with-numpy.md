@@ -2,7 +2,7 @@
 title: "Conway's Game of Life in Just a Few Lines with Python's Scientific Stack"
 date: 2022-05-03T21:35:20-04:00
 draft: false
-mathjax: true
+math: true
 categories: 
     - python
 tags: 
