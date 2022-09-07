@@ -3,6 +3,7 @@ title = "Will Duke's Blog"
 languageCode = 'en-us'
 theme = "PaperMod"
 paginate = 5
+googleAnalytics = 'G-DW1P8KG3ES'
 
 [taxonomies]
 category = "categories"
@@ -82,7 +83,7 @@ appendFilePath = true
 icon = '/apple-touch-icon.png'
 
 [params.analytics.google]
-SiteVerificationTag = "G-DW1P8KG3ES"
+SiteVerificationTag = "YFLJWyfoiCPS_M6R4zxZe1XBpPlHZzrbEqFDpbmZXvs"
 
 [fuseOpts]
 isCaseSensitive = false
