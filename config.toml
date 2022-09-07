@@ -81,6 +81,9 @@ appendFilePath = true
 [params.label]
 icon = '/apple-touch-icon.png'
 
+[params.analytics.google]
+SiteVerificationTag = "G-DW1P8KG3ES"
+
 [fuseOpts]
 isCaseSensitive = false
 shouldSort = true
@@ -90,5 +93,4 @@ threshold = 0.4
 minMatchCharLength = 0
 keys = [ "title", "permalink", "summary", "content", "tag" ]
 
-[analytics.google]
-SiteVerificationTag = "G-DW1P8KG3ES"
+
