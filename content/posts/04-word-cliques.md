@@ -195,8 +195,8 @@ Here's a sampling of some of the word sets:
 |ampyx|crwth|fdubs|glink|vejoz|
 |bortz|chivw|dunks|flegm|japyx|
 
-Maybe I shouldn't be surprised that these stretch the definition of English word.
+Maybe I shouldn't be surprised that these aren't quite in the vernacular.
 
 You can find the complete source for this post [here](https://github.com/WillDuke/blog-post-code/blob/master/blog_post_code/wordle_cliques/cliques.py).
 
-[^1]: The source for the C implementation can be found [here](https://github.com/igraph/igraph/blob/df17b097fd9b582241ee3f38aa82e03eba05d785/src/cliques/cliquer/cliquer.c#L337).
+[^1]: The source for Cliquer's C implementation as vendored in iGraph can be found [here](https://github.com/igraph/igraph/blob/df17b097fd9b582241ee3f38aa82e03eba05d785/src/cliques/cliquer/cliquer.c#L337).
