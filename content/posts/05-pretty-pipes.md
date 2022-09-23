@@ -2,6 +2,13 @@
 title: "Pretty Pipes for Perusable (and Reusable) Pandas Procedures"
 date: 2022-09-22T16:29:13-04:00
 draft: false
+categories: 
+    - python
+tags: 
+    - pandas
+    - python
+    - functional
+    - pipe
 ---
 
 Pandas is a fantastic library for data analysis, but its syntax can be a bit jarring to the unfamiliar user, especially one coming from the R `tidyverse` [ecosystem](https://www.tidyverse.org/) where the `%>%` (pipe) operator makes method-chaining powerful and preferred for most operations. It turns out that a similar syntax is totally possible in `pandas` with the `pipe` and `assign` methods! With these, you can make your `pandas` code much more readable and reusable.
