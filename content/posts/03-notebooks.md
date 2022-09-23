@@ -44,7 +44,7 @@ It's far too easy to create circumstances where code that appears to be perfectl
 
 The ability to freely run cells out of order, while convenient, breaks our convenant with the machine that - barring the explicit introduction of concurrency -- things will happen (or have happened) in a predictable linear order. I can look at my screen and see two cells that define a logical set of steps and then get a confusing error on running the latter cell because a variable was silenty overwritten when I ran a third cell I thought was unrelated.[^1]
 
-### Reproducing results can be tricky
+### Reproducing Results can be Tricky
 
 The output of a notebook depends on the kernel that was used to run it, and different individuals may not have access to or have set up the same environment. Sometimes, the notebooks themselves contain `pip` magic that install new packages or makes other environment changes. This can make it very difficult to reproduce the set of packages that were used to generate the results. Notebooks give the appearance of being standalone files, so they are frequently exchanged without bringing along enough information to reproduce the initial kernel state.
 
